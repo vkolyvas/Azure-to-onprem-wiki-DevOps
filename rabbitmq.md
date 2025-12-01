@@ -19,9 +19,9 @@ text
 http://<rabbitmq-host>:15672
 ```
 3. Create:
-•	Virtual hosts
-•	Users and permissions
-•	Exchanges, queues, and bindings
-4. Optionally configure:
-•	TLS for secure connections
-•	Mirrored / quorum queues for HA
+- Virtual hosts
+- Users and permissions
+- Exchanges, queues, and bindings
+5. Optionally configure:
+- TLS for secure connections
+- Mirrored / quorum queues for HA
