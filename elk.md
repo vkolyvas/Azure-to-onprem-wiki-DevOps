@@ -5,10 +5,10 @@ Install via official repos (Elasticsearch → Logstash → Kibana).
 
 **Configuration**
 
--Configure Logstash pipelines
+- Configure Logstash pipelines
 
--Configure role-based access
+- Configure role-based access
 
--Define index templates
+- Define index templates
 
--Configure Beats or syslog input sources
+- Configure Beats or syslog input sources
