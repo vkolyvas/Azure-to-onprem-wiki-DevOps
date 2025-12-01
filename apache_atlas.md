@@ -7,7 +7,7 @@
 
 3. Start services:
 
-'''./bin/atlas_start.py'''
+```./bin/atlas_start.py```
 
 **Configuration**
 
