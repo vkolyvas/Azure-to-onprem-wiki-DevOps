@@ -8,9 +8,9 @@ The diagram below illustrates the system architecture.
 
 **Files:**
 - `onprem_architecture.drawio`
-- `onprem_architecture.png`
+- `azure_fabric_llm.drawio.png`
 
-![Architecture](onprem_architecture.png)
+![Architecture](azure_fabric_llm.drawio.png)
 
 1. Apache Superset\
 Apache Superset serves as an open-source business intelligence platform for data exploration and visualization, connecting to SQL databases to create interactive dashboards and charts. Engineers start by installing OS dependencies, Python virtual environment, and Superset itself on Ubuntu, then initialize the metadata database with superset db upgrade and create an admin user. Finally, run superset init for roles and launch the service on port 8088 to access the UI for building no-code visualizations and SQL queries.​
