@@ -37,14 +37,14 @@
   <br>
 
   <p>
-    ⚠️ <strong>Important:</strong> Search functionality (`/crawl`) requires a running instance of 
+     <strong>Important:</strong> Search functionality (`/crawl`) requires a running instance of 
     <a href="https://github.com/BrowserCash/browser-serp"><strong>browser-serp</strong></a>.
   </p>
 </div>
 
 ---
 
-## 📊 Benchmarks
+##  Benchmarks
 
 <div align="center">
   <img src="scrape-evals.png" alt="Teracrawl achieves #1 coverage at 82.1%" width="700">
@@ -53,7 +53,7 @@
 
 ---
 
-## 🚀 What is Teracrawl?
+##  What is Teracrawl?
 
 **Teracrawl** is a production-ready API designed to turn websites into clean, LLM-ready Markdown. It handles the complexity of JavaScript rendering, anti-bot measures, and parallel execution allowing AI systems to access real-time data quickly.
 
@@ -61,12 +61,12 @@ Unlike simple HTML scrapers, Teracrawl uses real managed Chrome browsers, ensuri
 
 ### Why use Teracrawl?
 
-- **🤖 LLM-Optimized Output**: Converts complex HTML into clean, semantic Markdown perfect for RAG and context windows.
-- **⚡ Smart Two-Phase Crawling**:
+- ** LLM-Optimized Output**: Converts complex HTML into clean, semantic Markdown perfect for RAG and context windows.
+- ** Smart Two-Phase Crawling**:
   - _Fast Mode_: Optimized for static/SSR pages (reuses contexts, blocks heavy assets).
   - _Dynamic Mode_: Automatic fallback for complex SPAs (waits for hydration/rendering).
-- **🔍 Search & Scrape**: Single endpoint to query Google and scrape the top results in parallel.
-- **🏎️ High Concurrency**: Built on a robust <a href="https://github.com/BrowserCash/browser-pool">session pool</a> to handle multiple pages simultaneously.
+- ** Search & Scrape**: Single endpoint to query Google and scrape the top results in parallel.
+- **🏎 High Concurrency**: Built on a robust <a href="https://github.com/BrowserCash/browser-pool">session pool</a> to handle multiple pages simultaneously.
 
 ## <a name="features"></a>✨ Features
 
@@ -79,7 +79,7 @@ Unlike simple HTML scrapers, Teracrawl uses real managed Chrome browsers, ensuri
   - Automatic timeout handling and error recovery.
 - **Docker Ready**: Deploy anywhere with a lightweight container.
 
-## <a name="quick-start"></a>🛠️ Quick Start
+## <a name="quick-start"></a>🛠 Quick Start
 
 ### Prerequisites
 
@@ -246,7 +246,7 @@ curl http://localhost:8085/health
 }
 ```
 
-## <a name="configuration"></a>⚙️ Configuration
+## <a name="configuration"></a>⚙ Configuration
 
 ### Server & Infrastructure
 
@@ -270,7 +270,7 @@ curl http://localhost:8085/health
 | `CRAWL_SLOW_TIMEOUT_MS`       | `20000` | Timeout for "Slow" scraping mode (ms).                           |
 | `CRAWL_JITTER_MS`             | `0`     | Max random delay (ms) between requests to avoid thundering herd. |
 
-## <a name="docker"></a>🐳 Docker
+## <a name="docker"></a> Docker
 
 You can run Teracrawl easily using Docker.
 
@@ -317,6 +317,6 @@ Contributions are welcome! We appreciate your help in making Teracrawl better.
 4.  **Push to the Branch**: `git push origin feature/AmazingFeature`
 5.  **Open a Pull Request**: Submit your changes for review.
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.

@@ -30,7 +30,7 @@
 
 > **Why is this running?**
 
-When something is running on a system—whether it is a process, a service, or something bound to a port—there is always a cause. That cause is often indirect, non-obvious, or spread across multiple layers such as supervisors, containers, services, or shells.
+When something is running on a system-whether it is a process, a service, or something bound to a port-there is always a cause. That cause is often indirect, non-obvious, or spread across multiple layers such as supervisors, containers, services, or shells.
 
 Existing tools (`ps`, `top`, `lsof`, `ss`, `systemctl`, `docker ps`) expose state and metadata. They show _what_ is running, but leave the user to infer _why_ by manually correlating outputs across tools.
 
@@ -608,30 +608,30 @@ Re-run with:
 | Feature | Linux | macOS | Windows | FreeBSD | Notes |
 |---------|:-----:|:-----:|:-------:|:-------:|-------|
 | **Process Inspection** |
-| Basic process info (PID, PPID, user, command) | ✅ | ✅ | ✅ | ✅ | |
-| Full command line | ✅ | ✅ | ✅ | ✅ | |
-| Process start time | ✅ | ✅ | ✅ | ✅ | |
-| Working directory | ✅ | ✅ | ❌ | ✅ | Windows: hard to get without injection |
-| Environment variables | ✅ | ⚠️ | ❌ | ✅ | Windows: not supported. macOS: partial. |
+| Basic process info (PID, PPID, user, command) |  |  |  |  | |
+| Full command line |  |  |  |  | |
+| Process start time |  |  |  |  | |
+| Working directory |  |  | ❌ |  | Windows: hard to get without injection |
+| Environment variables |  |  | ❌ |  | Windows: not supported. macOS: partial. |
 | **Network** |
-| Listening ports | ✅ | ✅ | ✅ | ✅ | |
-| Bind addresses | ✅ | ✅ | ✅ | ✅ | |
-| Port → PID resolution | ✅ | ✅ | ✅ | ✅ | |
+| Listening ports |  |  |  |  | |
+| Bind addresses |  |  |  |  | |
+| Port → PID resolution |  |  |  |  | |
 | **Service Detection** |
-| systemd | ✅ | ❌ | ❌ | ❌ | Linux only |
-| launchd | ❌ | ✅ | ❌ | ❌ | macOS only |
-| rc.d | ❌ | ❌ | ❌ | ✅ | FreeBSD only |
-| Supervisor | ✅ | ✅ | ✅ | ✅ | |
-| Containers | ✅ | ⚠️ | ❌ | ✅ | Windows/macOS: Docker detects VM context. FreeBSD: Jails. |
+| systemd |  | ❌ | ❌ | ❌ | Linux only |
+| launchd | ❌ |  | ❌ | ❌ | macOS only |
+| rc.d | ❌ | ❌ | ❌ |  | FreeBSD only |
+| Supervisor |  |  |  |  | |
+| Containers |  |  | ❌ |  | Windows/macOS: Docker detects VM context. FreeBSD: Jails. |
 | **Health & Diagnostics** |
-| CPU usage detection | ✅ | ✅ | ✅ | ✅ | |
-| Memory usage detection | ✅ | ✅ | ✅ | ✅ | |
-| Health status detection | ✅ | ✅ | ✅ | ✅ | Windows checks process Status (WMI). |
-| Open Files / Handles | ✅ | ✅ | ✅ | ✅ | Verbose mode only. |
+| CPU usage detection |  |  |  |  | |
+| Memory usage detection |  |  |  |  | |
+| Health status detection |  |  |  |  | Windows checks process Status (WMI). |
+| Open Files / Handles |  |  |  |  | Verbose mode only. |
 | **Context** |
-| Git repo/branch detection | ✅ | ✅ | ❌ | ✅ | Requires working directory |
+| Git repo/branch detection |  |  | ❌ |  | Requires working directory |
 
-**Legend:** ✅ Full support | ⚠️ Partial/limited support | ❌ Not available
+**Legend:**  Full support |  Partial/limited support | ❌ Not available
 
 ---
 
